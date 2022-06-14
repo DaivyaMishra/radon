@@ -9,6 +9,7 @@ router.get("/test-me", function (req, res) {
 router.post("/users", userController.createUser  )
 
 router.post("/login", userController.loginUser)
+router.delete("/users/:userId",userController.deleteUser)
 
 //The userId is sent by front end
 router.get("/users/:userId", userController.getUserData)
